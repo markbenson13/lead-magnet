@@ -1,0 +1,293 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+     p {
+         text-transform: uppercase;
+         font-family: "Myriad Pro Condensed", sans-serif;
+         letter-spacing: 2px;
+     }
+}
+
+#videos-wrapper {
+    padding: 5em 0;
+
+    .videos {
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-image: url(../assets/images/video-placeholder.png);
+            background-size: cover;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
+.music-items {
+    border: 1px solid $white;
+    max-width: 410px;
+    margin: auto;
+    padding: 1rem 0;
+
+    .album {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+
+        .album-image {
+            margin-right: 1.5rem;
+            width: 82px;
+            height: 82px;
+            border-radius: 100%;
+            overflow: hidden;
+
+            img {
+                margin-left: -40px;
+            }
+        }
+
+        .album-title {
+            h3 {
+                font-family: $secondary-font;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-size: 12px;
+                margin-top: 6px;
+            }
+        }
+    }
+
+    .album-lists {
+        margin-top: 1rem;
+        
+
+        ol {
+            list-style-type: decimal;
+            padding: 0 3rem;
+            display: flex;
+            flex-flow: column wrap;
+
+            li {
+                padding: 8px 0;
+
+                .title {
+                    width: calc(100% - 55px);
+                    display: inline-block;
+                }
+
+                .song-duration {
+                    width: 50px;
+                    display: inline-block;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+#tour-wrapper {
+    position: relative;
+    padding: 3em 0;
+
+    .tour-items {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+        margin-top: 3rem;
+
+        .tour-item {
+            width: calc(100%/2);
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+
+            .tour-details {
+                padding-right: 50px;
+
+                h3.tour-title, .tour-date {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: $secondary-font;
+                }
+
+                .tour-date {
+                    display: block;
+                    margin-top: 5px;
+                }
+
+                p.tour-location {
+                    font-family: $secondary-font;
+                    margin-top: 1rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size: 12px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}
+
+#merchandise-wrapper {
+    position: relative;
+
+    .merchandise-item {
+        flex-flow: row wrap;
+        display: flex;
+        align-items: center;
+        background-color: $white;
+
+        .merchandise-info {
+            flex-basis: 50%;
+            text-align: center;
+            background-color: $white;
+            min-height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column wrap;
+            position: relative;
+
+            h2 {
+                font-size: 6rem;
+                color: $black;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-size: 3rem;
+                color: $orange;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                font-family: $secondary-font;
+                margin: 1.5rem 0;
+            }
+
+            p {
+                color: #000;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-family: $secondary-font;
+                font-size: 26px;
+            }
+
+            span {
+                font-size: 55px;
+                color: #000;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                font-family: "Moonshiner Regular Lines", sans-serif;
+            }
+        }
+
+        .merchandise-image {
+            flex-basis: 50%;
+            text-align: center;
+            background-color: #000;
+            min-height: 380px;
+        }
+    }
+}
+
+#footer-form-wrapper {
+    position: relative;
+    padding: 5rem 0 3rem;
+    text-align: center;
+
+    .sign-up-form {
+        position: relative;
+
+        h2 {
+            font-size: 40px;
+            color: $white;
+
+            span {
+                display: block;
+                color: $orange;
+            }
+        }
+
+        #sign-up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+            .input-field {
+                width: 75%;
+                label {
+                    display: none;
+                }
+
+                input[type="email"] {
+                    width: 100%;
+                    height: 70px;
+                    text-align: center;
+                    background-color: #3d3d3d;
+                    color: #000;
+                    font-family: $secondary-font;
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 10px;
+                    letter-spacing: 3px;
+                }
+            }
+
+            input[type="submit"] {
+                width: 25%;
+                height: 70px;
+                background-color: $white;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: $secondary-font;
+                font-size: 26px;
+                border: none;
+                margin-left: 40px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+#footer {
+    position: relative;
+    border-top: 40px solid #fff;
+    padding: 5rem 0 3rem;
+
+    .row {
+        align-items: center;
+    }
+
+    .footer-copyright {
+        font-size: 16px;
+        font-family: $secondary-font;
+        margin-top: 12px;
+    }
+
+    .social-media-icons ul {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,96 @@
+// Hero
+
+#hero-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #669284;
+    // background-image: url(../assets/images/hero-bg.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+    // &:after {
+    //     content: "";
+    //     background-image: url(../assets/images/hero-backdrop.jpg);
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    // }
+
+    // .artist {
+    //     text-align: center;
+    //     mix-blend-mode: luminosity;
+    //     position: relative;
+    //     z-index: 2;
+    //     background-image: url(../assets/images/guitarist.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     width: 100%;
+    //     height: 100%;
+
+    //     &:after {
+    //         content: "";
+    //         background-image: url(../assets/images/body-flame.png);
+    //         width: 100%;
+    //         height: 100%;
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         z-index: 10;
+    //     }
+    // }
+
+    .flame {
+        background-color: #669284;
+        mix-blend-mode: hard-light;
+        background-image: url(../assets/images/flame-particles.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .artist-bg {
+        background-image: url(../assets/images/artist.jpg);
+        // background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        // &:after {
+        //     content: "";
+        //     width: 100%;
+        //     height: 100vh;
+        //     background-image: url(../assets/images/flame.png);
+        //     background-repeat: no-repeat;
+        // }
+    }
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+    .social-media-icons {
+        margin-top: 1rem;
+    }
+}

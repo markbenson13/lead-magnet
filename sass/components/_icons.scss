@@ -1,0 +1,45 @@
+.social-media-icons {
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            padding: 0 10px; 
+            
+            .smi-icon {
+                width: 20px;
+                height: 20px;
+                display: block;
+                background-repeat: no-repeat;
+
+                &.facebook {
+                    background-image: url(../assets/images/icons/facebook-logo.png);
+                    width: 15px;
+                    height: 27px;
+                }
+                &.youtube {
+                    background-image: url(../assets/images/icons/youtube-logo.png);
+                    width: 27px;
+                    height: 20px;
+                }
+                &.instagram {
+                    background-image: url(../assets/images/icons/instagram-logo.png);
+                    width: 22px;
+                    height: 22px;
+                }
+                &.snapchat {
+                    background-image: url(../assets/images/icons/snapchat-logo.png);
+                    width: 24px;
+                    height: 22px;
+                }
+                &.twitter {
+                    background-image: url(../assets/images/icons/twitter-logo.png);
+                    width: 26px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@ gulp.task('hello', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: './'
     }
   })
 })
