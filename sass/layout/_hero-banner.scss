@@ -89,6 +89,10 @@
     top: 0;
     left: 0;
     z-index: 5;
+
+    img {
+        max-width: 280px;
+    }
     
     .social-media-icons {
         margin-top: 1rem;

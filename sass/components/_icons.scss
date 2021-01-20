@@ -13,31 +13,52 @@
                 height: 20px;
                 display: block;
                 background-repeat: no-repeat;
+                transition: all .3s ease-in-out;
 
                 &.facebook {
-                    background-image: url(../assets/images/icons/facebook-logo.png);
+                    background-image: url(../assets/images/icons/facebook-logo-white.png);
                     width: 15px;
                     height: 27px;
+
+                    &:hover {
+                        background-image: url(../assets/images/icons/facebook-logo.png);
+                    }
                 }
                 &.youtube {
-                    background-image: url(../assets/images/icons/youtube-logo.png);
+                    background-image: url(../assets/images/icons/youtube-logo-white.png);
                     width: 27px;
                     height: 20px;
+
+                    &:hover {
+                        background-image: url(../assets/images/icons/youtube-logo.png);
+                    }
                 }
                 &.instagram {
-                    background-image: url(../assets/images/icons/instagram-logo.png);
+                    background-image: url(../assets/images/icons/instagram-logo-white.png);
                     width: 22px;
                     height: 22px;
+
+                    &:hover {
+                        background-image: url(../assets/images/icons/instagram-logo.png);
+                    }
                 }
                 &.snapchat {
-                    background-image: url(../assets/images/icons/snapchat-logo.png);
+                    background-image: url(../assets/images/icons/snapchat-logo-white.png);
                     width: 24px;
                     height: 22px;
+
+                    &:hover {
+                        background-image: url(../assets/images/icons/snapchat-logo.png);
+                    }
                 }
                 &.twitter {
-                    background-image: url(../assets/images/icons/twitter-logo.png);
+                    background-image: url(../assets/images/icons/twitter-logo-white.png);
                     width: 26px;
                     height: 22px;
+
+                    &:hover {
+                        background-image: url(../assets/images/icons/twitter-logo.png);
+                    }
                 }
             }
         }
