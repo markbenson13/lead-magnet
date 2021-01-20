@@ -144,6 +144,8 @@
                 .title {
                     width: calc(100% - 55px);
                     display: inline-block;
+                    font-family: $secondary-font;
+                    letter-spacing: 1px;
                 }
 
                 .song-duration {
