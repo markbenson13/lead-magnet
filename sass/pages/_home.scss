@@ -165,9 +165,20 @@
                 flex-basis: 100%;
             }
 
+            @media only screen and (max-width: 576px) {
+                flex-flow: column wrap;
+            }
+
             .tour-details {
                 padding-right: 50px;
                 flex-basis: 50%;
+
+                @media only screen and (max-width: 576px) {
+                    flex-basis: 100%;
+                    order: 2;
+                    padding-right: 0;
+                    margin-top: 1rem;
+                }
 
                 h3.tour-title, .tour-date {
                     text-transform: uppercase;
@@ -193,6 +204,11 @@
                 position: relative;
                 flex-basis: 50%;
                 text-align: center;
+
+                @media only screen and (max-width: 576px) {
+                    flex-basis: 100%;
+                    order: 1;
+                }
 
                 .tour-btn {
                     position: absolute;
@@ -243,6 +259,11 @@
                 font-size: 6rem;
                 color: $black;
                 text-transform: uppercase;
+
+                @media only screen and (max-width: 576px) {
+                    font-size: 3.5rem;
+                    letter-spacing: 8px;
+                }
             }
 
             h3 {
@@ -252,6 +273,11 @@
                 text-transform: uppercase;
                 font-family: $secondary-font;
                 margin: 1.5rem 0;
+
+                @media only screen and (max-width: 576px) {
+                    font-size: 2rem;
+                    letter-spacing: 6px;
+                }
             }
 
             p {
@@ -260,6 +286,10 @@
                 letter-spacing: 5px;
                 font-family: $secondary-font;
                 font-size: 26px;
+
+                @media only screen and (max-width: 576px) {
+                    font-size: 20px;
+                }
             }
 
             span {
@@ -434,7 +464,7 @@
         @media only screen and (max-width: 768px) {
             align-items: center;
             justify-content: center;
-            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
 }
