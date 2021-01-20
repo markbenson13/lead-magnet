@@ -5,20 +5,17 @@
     height: 100vh;
     width: 100%;
     background-color: #669284;
-    // background-image: url(../assets/images/hero-bg.jpg);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
 
-    // &:after {
-    //     content: "";
-    //     background-image: url(../assets/images/hero-backdrop.jpg);
-    //     width: 100%;
-    //     height: 100%;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    // }
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.9206057422969187) 5%, rgba(0,212,255,0) 20%);
+    }
 
     // .artist {
     //     text-align: center;
