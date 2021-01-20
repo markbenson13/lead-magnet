@@ -34,6 +34,10 @@
         }
     }
 
+    .social-btns {
+        margin-bottom: 1rem;
+    }
+
     .videos {
         position: relative;
 
@@ -113,12 +117,29 @@
 
         ol {
             list-style-type: decimal;
-            padding: 0 3rem;
+            padding: 0 2rem;
             display: flex;
             flex-flow: column wrap;
 
             li {
-                padding: 8px 0;
+                padding: 4px 0;
+                position: relative;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+
+                &.is-active {
+                    &:after {
+                        width: calc(100% + 4rem );
+                        content: "";
+                        height: 100%;
+                        background-color: #202020;
+                        position: absolute;
+                        top: 0;
+                        left: -2rem;
+                        z-index: -1;
+                    }
+                }
 
                 .title {
                     width: calc(100% - 55px);

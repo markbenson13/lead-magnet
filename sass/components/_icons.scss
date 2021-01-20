@@ -60,6 +60,42 @@
                         background-image: url(../assets/images/icons/twitter-logo.png);
                     }
                 }
+                &.apple {
+                    background-image: url(../assets/images/icons/apple-logo.png);
+                    width: 28px;
+                    height: 28px;
+
+                    &:hover {
+                        // background-image: url(../assets/images/icons/twitter-logo.png);
+                    }
+                }
+                &.old-youtube {
+                    background-image: url(../assets/images/icons/old-youtube-icon.png);
+                    width: 26px;
+                    height: 26px;
+
+                    &:hover {
+                        // background-image: url(../assets/images/icons/twitter-logo.png);
+                    }
+                }
+                &.soundcloud {
+                    background-image: url(../assets/images/icons/soundcloud.png);
+                    width: 25px;
+                    height: 25px;
+
+                    &:hover {
+                        // background-image: url(../assets/images/icons/twitter-logo.png);
+                    }
+                }
+                &.spotify {
+                    background-image: url(../assets/images/icons/spotify-icon.png);
+                    width: 26px;
+                    height: 26px;
+
+                    &:hover {
+                        // background-image: url(../assets/images/icons/twitter-logo.png);
+                    }
+                }
             }
         }
     }
