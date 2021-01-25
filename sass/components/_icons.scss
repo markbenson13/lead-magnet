@@ -23,6 +23,10 @@
                     &:hover {
                         background-image: url(../assets/images/icons/facebook-logo.png);
                     }
+
+                    &.is-active {
+                        background-image: url(../assets/images/icons/facebook-logo.png); 
+                    }
                 }
                 &.youtube {
                     background-image: url(../assets/images/icons/youtube-logo-white.png);
